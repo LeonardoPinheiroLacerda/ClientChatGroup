@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="194.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.LoginController">
+   <children>
+      <VBox prefHeight="77.0" prefWidth="350.0" style="-fx-background-color: blue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="351.0" text="Login" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Century Gothic Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets top="14.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" prefHeight="19.0" prefWidth="351.0" text="Entre com o IP do servidor e um nome único." textAlignment="CENTER" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Century Gothic" size="15.0" />
+               </font>
+               <padding>
+                  <Insets top="4.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <Button fx:id="btn_conectar" layoutX="261.0" layoutY="159.0" mnemonicParsing="false" text="Conectar" AnchorPane.bottomAnchor="8.0" AnchorPane.rightAnchor="8.0">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Button>
+      <VBox layoutY="79.0" prefHeight="77.0" prefWidth="350.0" style="-fx-spacing: 10;" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                  <TextField fx:id="txf_IP" prefHeight="26.0" prefWidth="227.0" promptText="IP do servidor" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txf_porta" layoutX="238.0" prefHeight="26.0" prefWidth="98.0" promptText="Porta" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="txf_nome" prefHeight="25.0" prefWidth="323.0" promptText="Nome">
+               <font>
+                  <Font name="Century Gothic" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
